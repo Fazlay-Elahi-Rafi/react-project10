@@ -1,0 +1,174 @@
+.blog {
+  margin: 11rem 0;
+  &__span {
+    font-size: 1.5rem;
+    color: $black;
+    text-transform: capitalize;
+    font-family: $font3;
+
+    // max-width: 575px;
+    @include xs-screen {
+      font-size: 1rem;
+    }
+  }
+  &__title {
+    text-transform: capitalize;
+    font-family: $font2;
+    color: #ee7560;
+    font-size: 3rem;
+
+    // max-width: 575px;
+    @include xs-screen {
+      font-size: 2.3rem;
+    }
+  }
+  &__overlay {
+    background: rgba(41, 32, 60, 0.75);
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    &-one {
+      color: $white;
+      font-family: $font2;
+      text-transform: capitalize;
+      line-height: 1.4;
+      font-size: 1.3rem;
+      margin: 1.4rem 0 1rem 0;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        font-size: 2rem;
+        margin: 0 0 1rem 0;
+      }
+    }
+    &-two {
+      text-transform: capitalize;
+      color: $white;
+      font-family: $font2;
+      font-size: 0.9rem;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        font-size: 1rem;
+      }
+
+      //   min-width: 768px;
+      @include md-screen {
+        font-size: 1.5rem;
+      }
+
+      //   min-width: 1200px;
+      @include xl-screen {
+        font-size: 1rem;
+        margin: 2rem 0 1rem 0;
+      }
+
+      //   min-width: 1366px;
+      @include xli-screen {
+        font-size: 1.2rem;
+      }
+    }
+    &-three {
+      text-transform: capitalize;
+      color: $white;
+      font-family: $font2;
+      font-size: 0.9rem;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        font-size: 1rem;
+      }
+
+      //   min-width: 768px;
+      @include md-screen {
+        font-size: 1.5rem;
+      }
+
+      //   min-width: 1200px;
+      @include xl-screen {
+        font-size: 1rem;
+        margin: 2rem 0 1rem 0;
+      }
+
+      //   min-width: 1366px;
+      @include xli-screen {
+        font-size: 1.2rem;
+      }
+    }
+    &-para {
+      font-family: $font;
+      color: $white;
+      font-size: 0.95rem;
+
+      //   min-width: 768px;
+      @include md-screen {
+        font-size: 1.2rem;
+      }
+
+      //   min-width: 1200px;
+      @include xl-screen {
+        font-size: 1rem;
+      }
+
+      //   min-width: 1366px;
+      @include xli-screen {
+        font-size: 0.95rem;
+      }
+    }
+  }
+  &__date {
+    position: absolute;
+    font-family: $font;
+    z-index: 999;
+    color: $white;
+    top: 5%;
+    left: 5%;
+    &-provider {
+      margin: 0 5px;
+      text-transform: capitalize;
+      color: #ee7560;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        margin: 0 9px;
+      }
+    }
+  }
+  &__body {
+    &:hover img {
+      transition: all 0.3s ease-in !important;
+      transform: scale(1.15);
+    }
+  }
+  &__img {
+    position: relative;
+    overflow: hidden;
+    img {
+      transition: all 0.3s ease-in !important;
+    }
+  }
+  &__btn {
+    color: #ee7560 !important;
+    text-transform: uppercase;
+    font-size: 0.9rem !important;
+    padding: 0.3rem 2.3rem !important;
+    border-radius: 50px !important;
+    box-shadow: none !important;
+    outline: 0 !important;
+    border: 1px solid #ee7560 !important;
+    transition: all 0.2s ease-in !important;
+    &:hover {
+      transition: all 0.2s ease-in !important;
+      color: $white !important;
+      background-image: linear-gradient(-90deg, #ee7560 0%, #ff5858 97%);
+    }
+
+    // min-width: 568px;
+    @include iphn-screen {
+      font-size: 1rem !important;
+      padding: 0.4rem 2.3rem !important;
+    }
+  }
+}

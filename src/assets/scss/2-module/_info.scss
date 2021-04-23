@@ -1,0 +1,19 @@
+.info {
+  margin: 11rem 0;
+  &__para {
+    font-size: 1rem;
+  }
+  &__bakery {
+    font-size: 0.95rem;
+    display: block;
+    color: #8d8d8d;
+    text-transform: capitalize;
+    margin: 0 0 8px 0;
+  }
+  &__name {
+    font-family: $font3;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #f9930c;
+  }
+}

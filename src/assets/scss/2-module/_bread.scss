@@ -1,0 +1,74 @@
+.bread {
+  margin: 11rem 0;
+  &__span {
+    font-size: 1.5rem;
+    color: $black;
+    text-transform: capitalize;
+    font-family: $font3;
+
+    // max-width: 575px;
+    @include xs-screen {
+      font-size: 1rem;
+    }
+  }
+  &__title {
+    text-transform: capitalize;
+    font-family: $font2;
+    color: #ee7560;
+    font-size: 3rem;
+
+    // max-width: 575px;
+    @include xs-screen {
+      font-size: 2.3rem;
+    }
+  }
+  &__progress {
+    background-color: #ee7560 !important;
+    width: 50%;
+  }
+  &__price {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: $font;
+    &-num {
+      color: #ee7560;
+      font-size: 2.5rem;
+    }
+  }
+  &__info {
+    &-sold {
+      color: #8d8d8d;
+      text-transform: capitalize;
+    }
+    &-num {
+      font-weight: 700;
+      color: $black;
+    }
+  }
+  &__timer {
+    margin: 1rem 0 0 0;
+  }
+  &__counter {
+    &-value {
+      color: rgba(78, 57, 57, 0.8);
+      font-size: 1rem;
+      font-family: $font2;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        font-size: 3rem;
+      }
+    }
+    &-time {
+      font-family: $font;
+      font-size: 12px;
+      color: #716161;
+      text-transform: uppercase;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.loader {
+  background: #3d0606;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  img {
+    min-width: 270px;
+    width: 17rem;
+
+    // min-width: 992px;
+    @include lg-screen {
+      width: 22rem;
+    }
+  }
+}

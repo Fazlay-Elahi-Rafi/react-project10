@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import  "./assets/scss/style.scss";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import App from "./assets/Component/App";
+
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+
+// 01. npm install react-icons --save
+
+// 02. npm i bootstrap@5.0.0-beta1
+
+// 03. npm i sass
+
+// 04. npm i jquery
+
+// Slick-Slider
+// 05. npm install react-slick --save
+// 06. npm install slick-carousel
+
+// 07. npm install react-router-dom
+
+// npm i redux
+// npm i react-redux
+// npm i react-scripts

@@ -1,0 +1,85 @@
+.navbar {
+  z-index: 10;
+  &__logo {
+    margin: 0 0;
+  }
+  &__list {
+    &-link {
+      font-size: 0.95rem !important;
+      color: $black !important;
+      font-family: $font;
+      box-shadow: none !important;
+      text-transform: uppercase;
+      &:hover {
+        color: #ee7560 !important;
+      }
+    }
+  }
+  &__submenu {
+    margin: 0 0;
+    &-list {
+      background: $white !important;
+      box-shadow: 0 10px 30px 0 rgb(0 0 0 / 20%);
+      border-radius: 3px !important;
+      margin: 0 0 0 -4rem !important;
+      a {
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        color: $black !important;
+        font-family: $font;
+        padding: 0.4rem 5rem 0.4rem 2rem;
+        background: $white !important;
+        position: relative;
+        &:hover {
+          background: #f8f9fa !important;
+        }
+      }
+    }
+  }
+  .active {
+    color: #ee7560 !important;
+  }
+  &__cart {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid tomato;
+    border-radius: 50px;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: tomato;
+    transition: all 0.3s ease-in;
+
+    // min-width: 992px;
+    @include lg-screen {
+      transform: translate(1.5rem, 0);
+    }
+
+    // min-width: 1200px;
+    @include xl-screen {
+      transform: translate(3rem, 0);
+      // transform: translate(3.5rem, 0);
+    }
+    &:hover {
+      transition: all 0.3s ease-in;
+      background: tomato;
+      color: $white;
+    }
+    &-icon {
+      transform: translate(8px, 0);
+    }
+    &-num {
+      transform: translate(6px, -1rem);
+      background: $beta;
+      color: $white;
+      border-radius: 50px;
+      height: 20px;
+      width: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

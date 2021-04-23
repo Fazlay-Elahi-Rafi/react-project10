@@ -1,0 +1,99 @@
+.head {
+  margin: 1.5rem 0 0 0;
+
+  //   min-width: 992px;
+  @include lg-screen {
+    margin: -2rem 0 0rem 0;
+  }
+
+  //  min-width: 1200px;
+  @include xl-screen {
+    margin: -5rem 0 0 0;
+  }
+  &__overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(41, 32, 60, 0.6);
+  }
+  &__img {
+    height: 35rem !important;
+  }
+  &__title {
+    color: $white;
+    font-family: $font2;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  &__list {
+    margin: 0 0;
+    padding: 0 0;
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+  }
+  &__home {
+    text-decoration: none;
+    color: $white !important;
+    font-size: 1.05rem;
+    font-family: $font;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in;
+    &:hover {
+      transition: all 0.2s ease-in;
+      color: #ff5858 !important;
+    }
+  }
+  &__about {
+    text-transform: uppercase;
+    font-family: $font;
+    text-decoration: none;
+    font-size: 1.05rem;
+    color: #ff5858 !important;
+  }
+
+  &__span {
+    font-size: 1.5rem;
+    color: $black;
+    text-transform: capitalize;
+    font-family: $font3;
+
+    // max-width: 575px;
+    @include xs-screen {
+      font-size: 1rem;
+    }
+  }
+  &__margin {
+    margin: 0 0 5.5rem 0;
+
+    // min-width: 1200px;
+    @include lg-screen {
+      margin: 0 0;
+    }
+  }
+  &__name {
+    text-transform: capitalize;
+    font-family: $font2;
+    color: #ee7560;
+    font-size: 1.8rem;
+
+    // min-width: 568px;
+    @include iphn-screen {
+      font-size: 2rem;
+    }
+  }
+  &__details {
+    font-size: 0.9rem;
+
+    // min-width: 568px;
+    @include iphn-screen {
+      font-size: 1rem;
+    }
+  }
+  &__shop {
+    font-family: $font;
+    font-size: 0.95rem;
+    color: rgba(78, 57, 57, 0.8);
+  }
+}

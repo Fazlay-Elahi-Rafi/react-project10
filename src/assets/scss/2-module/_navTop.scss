@@ -1,0 +1,60 @@
+.top {
+  margin: 0.7rem 0 2rem 0;
+  padding: 0 0 0.7rem 0;
+  font-family: $font;
+  border-bottom: 1px solid #eaeaea;
+  &__text {
+    font-size: 0.8rem;
+
+    // min-width: 992px;
+    @include lg-screen {
+      font-size: 0.7rem !important;
+    }
+
+    // min-width: 1200px;
+    @include xl-screen {
+      font-size: 0.9rem !important;
+    }
+  }
+
+  &__dropbtn {
+    outline: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-transform: uppercase;
+    font-size: 0.8rem !important;
+    margin: 0 1.5rem 0 0;
+    padding: 8px 16px !important;
+    line-height: 0 !important;
+
+    // min-width: 992px;
+    @include lg-screen {
+      font-size: 0.9rem !important;
+    }
+
+    &-list {
+      margin: 5px 0 0 -1.4rem !important;
+      min-width: 7rem !important;
+      li {
+        text-align: center;
+        outline: 0 !important;
+        margin: 0 10px;
+        a {
+          font-size: 0.8rem;
+          outline: 0 !important;
+          text-transform: uppercase;
+          color: $black !important;
+          background: transparent !important;
+          &:hover {
+            background: #f8f9fa !important;
+          }
+
+          // min-width: 992px;
+          @include lg-screen {
+            font-size: 0.9rem !important;
+          }
+        }
+      }
+    }
+  }
+}

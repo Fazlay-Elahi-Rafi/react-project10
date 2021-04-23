@@ -1,0 +1,113 @@
+.details {
+  margin: 11rem 0;
+  &__span {
+    font-size: 1.5rem;
+    color: $black;
+    text-transform: capitalize;
+    font-family: $font3;
+
+    // max-width: 575px;
+    @include xs-screen {
+      font-size: 1rem;
+    }
+  }
+  &__title {
+    text-transform: capitalize;
+    font-family: $font2;
+    color: #ee7560;
+    font-size: 3rem;
+
+    // max-width: 575px;
+    @include xs-screen {
+      font-size: 2.3rem;
+    }
+  }
+  &__products {
+    display: inherit;
+    &-list {
+      margin: 0 0;
+      transform: translate(0, 1.3rem);
+      padding: 0 0;
+      border-right: 2px solid rgba(78, 57, 57, 0.8);
+      &--item {
+        list-style: none;
+        display: block;
+        transform: translate(2px, 0) !important;
+        &.borderRight {
+          transform: translate(2px, 0);
+          border-right: 2px solid #e9bd00;
+        }
+        &.borderHide {
+          transform: translate(2px, 0);
+          border-right: none;
+        }
+        &__btn {
+          text-transform: uppercase;
+          box-shadow: none !important;
+          outline: 0 !important;
+          padding: 0 0 !important;
+          margin: 0 0 1.5rem 0 !important;
+          font-size: 1rem !important;
+          font-family: $font;
+          color: rgba(78, 57, 57, 0.8) !important;
+          transform: translate(0, 1rem);
+          &.active {
+            color: #e9bd00 !important;
+          }
+          &.hide {
+            color: rgba(78, 57, 57, 0.8) !important;
+            &:hover {
+              color: #e9bd00 !important;
+            }
+          }
+        }
+      }
+    }
+    .showItem {
+      position: relative;
+      transform: rotateX(0deg);
+      transition: all 0.4s ease;
+    }
+    .hideItem {
+      position: fixed;
+      transform: rotateX(50deg);
+      transition: all 0.4s ease;
+    }
+    &-items {
+      margin: 0 0;
+      &--name {
+        margin: 0 0 1.5rem 0;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        font-family: $font;
+
+        // min-width: 568px;
+        @include iphn-screen {
+          font-size: 2rem;
+        }
+      }
+      &--text {
+        margin: 0 0 1rem 0;
+        font-family: "Varela Round", sans-serif;
+        font-size: 1rem;
+      }
+      &--info {
+        &__ul {
+          margin: 0 0;
+          padding: 0 0;
+          li {
+            list-style: none;
+            text-transform: capitalize;
+            color: #8d8d8d;
+          }
+        }
+        &__span {
+          margin: 0 0 0 10px;
+          font-size: 1rem;
+          color: $black;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
