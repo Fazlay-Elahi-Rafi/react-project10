@@ -39,7 +39,7 @@ const FullPage = ({ cart }) => {
           </div>
           <div className="col-9 col-sm-10 d-flex justify-content-end align-items-center">
             <div className="col-9 col-sm-10 d-flex justify-content-end">
-              <Link to="/cart" className="navbar__cart">
+              <Link to="/CartPage" className="navbar__cart">
                 <FiShoppingCart className="navbar__cart-icon" />
                 <span className="navbar__cart-num">{cartCount}</span>
               </Link>

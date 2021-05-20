@@ -88,7 +88,7 @@ const Navbar = ({ cart }) => {
                   contact
                 </Link>
               </li>
-              <Link to="/cart" className="navbar__cart">
+              <Link to="/CartPage" className="navbar__cart">
                 <FiShoppingCart className="navbar__cart-icon" />
                 <span className="navbar__cart-num">{cartCount}</span>
               </Link>

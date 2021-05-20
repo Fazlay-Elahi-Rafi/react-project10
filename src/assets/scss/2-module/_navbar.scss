@@ -51,6 +51,7 @@
     justify-content: center;
     color: tomato;
     transition: all 0.3s ease-in;
+    text-decoration: none !important;
 
     // min-width: 992px;
     @include lg-screen {
