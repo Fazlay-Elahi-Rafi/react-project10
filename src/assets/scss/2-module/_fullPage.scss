@@ -5,7 +5,7 @@
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.82);
-  // background: #3b3a3a;
+  overflow: scroll;
   transform: translateX(50%);
   z-index: 10;
   transition: all 0.5s linear;
