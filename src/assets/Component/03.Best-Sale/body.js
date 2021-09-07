@@ -31,7 +31,7 @@ const Body = ({ product, addToCart, loadCurrentItem, removeFromCart }) => {
         <div className="sale__item-img">
           <div className="sale__item-icons">
             <div className="mb-3">
-              <Link to={`/product/${product.id}`}>
+              <Link to={`/SingleItem/${product.id}`}>
                 <BiSearchAlt
                   onClick={() => loadCurrentItem(product)}
                   className="sale__item-icons__icon"

@@ -10,7 +10,7 @@ export default function Head() {
         <img className="head__img img-fluid" src={img} alt="img" />
         <div className="card-img-overlay head__overlay">
           <div className="text-center">
-            <h1 className="head__title">contact</h1>
+            <h1 className="head__title">cart</h1>
             <ul className="head__list">
               <li>
                 <Link className="head__home" to="/">

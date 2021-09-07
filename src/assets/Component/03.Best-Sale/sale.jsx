@@ -1,16 +1,10 @@
 import React from "react";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import { connect } from "react-redux";
 
 import Products from "./products";
-import SingleItem from "./SingleItem";
 
 const Sale = ({ current }) => {
   return (
@@ -23,16 +17,7 @@ const Sale = ({ current }) => {
             <hr className="sale__border" />
           </div>
 
-          <Router>
-            <Switch>
-              <Route exact path="/" component={Products} />
-              {!current ? (
-                <Redirect to="/" />
-              ) : (
-                <Route exact path="/product/:id" component={SingleItem} />
-              )}
-            </Switch>
-          </Router>
+          <Route exact path="/" component={Products} />
         </div>
       </div>
     </section>

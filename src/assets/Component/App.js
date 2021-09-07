@@ -11,6 +11,7 @@ import AboutPage from "../Pages/AboutPage";
 import CartPage from "../Pages/CartPage";
 import ContactPage from "../Pages/ContactPage";
 import BlogPage from "../Pages/BlogPage";
+import SingleItem from "../Component/03.Best-Sale/SingleItem";
 import ErrorPage from "../Pages/ErrorPage";
 
 // Loader....
@@ -52,6 +53,7 @@ export default function App() {
             <Route exact path="/" component={HomePage} />
             <Route exact path="/AboutPage" component={AboutPage} />
             <Route exact path="/CartPage" component={CartPage} />
+            <Route exact path="/SingleItem/:id" component={SingleItem} />
             <Route exact path="/ContactPage" component={ContactPage} />
             <Route exact path="/ContactPage" component={ContactPage} />
             <Route exact path="/BlogPage" component={BlogPage} />

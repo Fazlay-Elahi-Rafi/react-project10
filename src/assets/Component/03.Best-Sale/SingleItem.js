@@ -1,6 +1,6 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
+
 import { RiArrowRightSLine } from "react-icons/ri";
 import { connect } from "react-redux";
 import { addToCart } from "./redux/Shopping/shopping-actions";
@@ -10,42 +10,42 @@ const SingleItem = ({ current, addToCart }) => {
     addToCart(current.id);
     alert("item add");
   };
-  return (
+  return current === null ? (
+    <div className="single__error">
+      <h3 className="single__error-title">Oops!! there is no items</h3>
+      <Link to="/" className="btn single__error-btn">
+        go back
+      </Link>
+    </div>
+  ) : (
     <>
-      <Link
-        to="/"
-        style={{ cursor: "default" }}
-        className="sale__backdropshow"
-      ></Link>
-      <div className="sale__single-product">
-        <div className="card mb-3 border-0">
+      <div className="single__product">
+        <div className="container">
           <div className="row">
             <div className="col-12 col-md-6 col-lg-5 pe-md-0">
-              <img className="img-fluid w-100" src={current.img} alt="img" />
+              <img
+                className="img-fluid w-100 rounded"
+                src={current.img}
+                alt="img"
+              />
             </div>
-            <div className="col-12 col-md-6 col-lg-7 m-auto">
+            <div className="col-12 col-md-5 m-auto">
               <div className="card-body">
-                <h5 className="text-capitalize sale__single-product--title">
+                <h5 className="text-capitalize single__product-title">
                   {current.title}
                 </h5>
-                <p className="card-text sale__single-product--price">
-                  <span className="sale__single-product--price--only">
-                    only:
-                  </span>
+                <p className="card-text single__product-price">
+                  <span className="single__product-price--only">only:</span>
                   {current.price}
                 </p>
-                <p className="card-text text-capitalize sale__single-product--avail">
+                <p className="card-text text-capitalize single__product-avail">
                   availability:
-                  <span className="sale__single-product--stock">in stock</span>
+                  <span className="single__product-stock">in stock</span>
                 </p>
 
-                <button
-                  className="btn sale__single-addbtn"
-                  onClick={addFun}
-                  // onClick={() => addToCart(current.id)}
-                >
+                <button className="btn single__addbtn" onClick={addFun}>
                   add to cart
-                  <RiArrowRightSLine className="sale__single-addbtn-icon" />
+                  <RiArrowRightSLine className="single__addbtn-icon" />
                 </button>
               </div>
             </div>
