@@ -6,7 +6,7 @@ const Api = [
     price: "$20",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos pariatur ex sed temporibus voluptatum",
-    img: "https://www.linkpicture.com/q/item-01.jpg",
+    img: "https://i.postimg.cc/vTKRp7Qn/pexels-diana-akhmetianova-4831036.jpg",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const Api = [
     price: "$10",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos pariatur ex sed temporibus voluptatum",
-    img: "https://www.linkpicture.com/q/pexels-bruno-thethe-1755788.jpg",
+    img: "https://i.postimg.cc/PrLn174Q/pexels-geraud-pfeiffer-6605310.jpg",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const Api = [
     price: "$20",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos pariatur ex sed temporibus voluptatum",
-    img: "https://www.linkpicture.com/q/pexels-monserrat-soldu-600620_2.jpg",
+    img: "https://i.postimg.cc/Ssyp8NTn/pexels-julia-filirovska-7140434.jpg",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const Api = [
     price: "$20",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos pariatur ex sed temporibus voluptatum",
-    img: "https://www.linkpicture.com/q/pexels-elina-sazonova-4240119.jpg",
+    img: "https://i.postimg.cc/NMpvxqSp/pexels-karolina-grabowska-4495758.jpg",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const Api = [
     price: "$20",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos pariatur ex sed temporibus voluptatum",
-    img: "https://www.linkpicture.com/q/pexels-ready-made-3850997-1.jpg",
+    img: "https://i.postimg.cc/ryZL0TSp/pexels-maria-orlova-4913487.jpg",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const Api = [
     price: "$20",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos pariatur ex sed temporibus voluptatum",
-    img: "https://www.linkpicture.com/q/pexels-skylar-kang-6045106.jpg",
+    img: "https://i.postimg.cc/QCCG4Yrs/pexels-marta-dzedyshko-7693917.jpg",
   },
 ];
 
